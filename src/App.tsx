@@ -1,22 +1,30 @@
 import React from "react";
 import "./App.scss";
-import { fetchArticle } from "./api";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Home from "./views/home";
+import Article from "./views/article";
 
 function App() {
-  console.log(fetchArticle());
-  // useEffect(async () => {
-  //   // effect
-  //   const data = await fetchArticle();
-  //   console.log(data);
-  //   // return () => {
-  //   //   cleanup
-  //   // }
-  // }, []);
-
   return (
-    <div className="App">
-      <h1>app</h1>
-    </div>
+    <Router>
+      <div className="App">
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/article">Article</Link>
+              </li>
+            </ul>
+          </nav>
+
+          <Route path="/" exact component={Home} />
+          <Route path="/article" component={Article} />
+        </div>
+      </div>
+    </Router>
   );
 }
 
