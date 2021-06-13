@@ -1,5 +1,7 @@
+import "./Table.scss";
+
 const Table = () => {
-  return <div>Table</div>;
+  return <div className="tableMain">Table</div>;
 };
 
 export default Table;

@@ -2,7 +2,7 @@ import React from "react";
 import "./App.scss";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./views/home";
-import Article from "./views/article";
+import ArticleView from "./views/article";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         </div>
         <div className="mainContent">
           <Route path="/" exact component={Home} />
-          <Route path="/article" component={Article} />
+          <Route path="/article" component={ArticleView} />
         </div>
       </div>
     </Router>

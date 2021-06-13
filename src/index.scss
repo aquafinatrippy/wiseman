@@ -1,10 +1,17 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Open Sans;
+  background: #3a3d57;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-image: none;
+  background-size: auto;
+  background-image: url(/assets/left.svg), url(/assets/right.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom, right top;
+  background-size: 150px, 250px;
+  background-attachment: fixed;
 }
 
 code {

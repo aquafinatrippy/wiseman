@@ -1,4 +1,4 @@
-import { Article } from "./types/article";
+import Article from "./types/article";
 import { TableRow } from "./types/tableRow";
 
 const url = "http://proovitoo.twn.ee/api/";
